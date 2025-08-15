@@ -1,0 +1,8 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'home/style.scss' %}">
+<h2>{{page.title}}</h2>
+<p>{{page.subtitle}}</p>
+<p>{{page.body|linebreaks}}</p>
+<pre class="codepanel">{{page.code}}</pre>
+<p>{{page.references|linebreaks}}</p>
